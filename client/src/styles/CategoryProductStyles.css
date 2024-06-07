@@ -1,0 +1,49 @@
+.category {
+  flex-wrap: wrap;
+  margin-top: 80px !important;
+  height: 100%;
+  --r: 56px;
+  --c1: #fff 99%, #0000 101%;
+  --c2: rgba(240, 248, 255, .438) 99%, #0000 101%;
+  --s: calc(var(--r)* .866);
+  --g0: radial-gradient(var(--r), var(--c1));
+  --g1: radial-gradient(var(--r), var(--c2));
+  --f: radial-gradient(var(--r) at calc(100% + var(--s)) 50%, var(--c1));
+  --p: radial-gradient(var(--r) at 100% 50%, var(--c2));
+  background: var(--f) 0 calc(-5* var(--r) / 2), var(--f) calc(-2* var(--s)) calc(var(--r) / 2), var(--p) 0 calc(-2* var(--r)), var(--g0) var(--s) calc(-5* var(--r) / 2), var(--g1) var(--s) calc(5* var(--r) / 2), radial-gradient(var(--r) at 100% 100%, var(--c1)) 0 calc(-1* var(--r)), radial-gradient(var(--r) at 0% 50%, var(--c1)) 0 calc(-4* var(--r)), var(--g1) calc(-1* var(--s)) calc(-7* var(--r) / 2), var(--g0) calc(-1* var(--s)) calc(-5* var(--r) / 2), var(--p) calc(-2* var(--s)) var(--r), var(--g0) calc(-1* var(--s)) calc(var(--r) / 2), var(--g1) calc(-1* var(--s)) calc(var(--r) / -2), var(--g0) 0 calc(-1* var(--r)), var(--g1) var(--s) calc(var(--r) / -2), var(--g0) var(--s) calc(var(--r) / 2) rgb(240, 248, 255);
+  background-size: calc(4* var(--s)) calc(6* var(--r));
+}
+.category .card {
+  background-color: rgba(128, 128, 128, 0.097);
+  width: 18rem;
+}
+.category .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.category .card-price {
+  color: green;
+  font-weight: bold;
+}
+.category button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.category .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.category .card img:hover {
+  transform: scale(0.9);
+}
+
+.category .card-img-top {
+  height: 300px !important;
+}
